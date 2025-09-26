@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
+import type { ReactNode } from 'react'
 import AdminLayout from './components/AdminLayout'
 import Login from './components/Login'
 import SermonsPage from './pages/SermonsPage'
@@ -12,7 +13,7 @@ import GalleryAdminPage from './pages/GalleryAdminPage'
 
 const isAuthed = () => localStorage.getItem('adminAuthed') === 'true'
 
-const Protected = ({ children }: { children: JSX.Element }) => {
+const Protected = ({ children }: { children: ReactNode }) => {
   return isAuthed() ? children : <Navigate to="/admin/login" replace />
 }
 

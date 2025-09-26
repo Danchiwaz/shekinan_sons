@@ -68,7 +68,7 @@ const Events = () => {
                                             </div>
                                             <div className="flex justify-between items-center">
                                                 <span className="text-sm text-gray-500"><i className="fas fa-map-marker-alt mr-1"></i>{ev.location}</span>
-                                                <button onClick={()=>{ setSelected(ev); setReg({ name: '', email: '', attendees: 1 }) }} className="text-sm btn-primary-gradient text-white py-2 px-4 rounded-full transition duration-300">
+                                                <button onClick={()=>{ setSelected(ev); setReg({ name: '', phone: '' }) }} className="text-sm btn-primary-gradient text-white py-2 px-4 rounded-full transition duration-300">
                                                     Register
                                                 </button>
                                             </div>
