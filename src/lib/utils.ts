@@ -5,7 +5,10 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:4000/api'
+// Default to deployed Render API unless VITE_API_BASE_URL is provided
+const DEFAULT_API_BASE = 'https://shekinan-sons.onrender.com/api'
+
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || DEFAULT_API_BASE
 
 export async function apiFetch(path: string, options?: RequestInit) {
   const res = await fetch(`${API_BASE_URL}${path}`, {
