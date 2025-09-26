@@ -14,7 +14,7 @@ const Hero = () => {
             <div className="grid md:grid-cols-2 items-center gap-10 md:gap-14">
                 <motion.div className="mx-auto md:mx-0 max-w-3xl text-center md:text-left" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeOut' }}>
                     <motion.div className="inline-block px-4 py-1 rounded-full bg-white/10 backdrop-blur-sm text-sm tracking-wide mb-5 soft-glow" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}>
-                        Welcome to Shekinah
+                        Welcome to ShekinahSons
                     </motion.div>
                     <motion.h1 className="heading-font text-5xl md:text-7xl font-bold mb-6 leading-tight" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }}>
                         Where Jesus is the Center of Everything
